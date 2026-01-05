@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน | Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <div class="header">
+                <h1>ลงทะเบียน</h1>
+                <p>กรุณากรอกข้อมูลให้ครบถ้วนเพื่อทำการลงทะเบียน</p>
+            </div>
+
+            <form id="registerForm">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="firstname">ชื่อ</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="กรอกชื่อ" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">นามสกุล</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="กรอกนามสกุล" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="idcard">เลขบัตรประชาชน</label>
+                    <input type="text" id="idcard" name="idcard" placeholder="เลขบัตรประชาชน 13 หลัก" maxlength="13"
+                        pattern="\d{13}" title="กรุณากรอกเลขบัตรประชาชน 13 หลัก" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0812345678" maxlength="10" pattern="\d{10}"
+                        title="กรุณากรอกเบอร์โทรศัพท์ 10 หลัก" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+                <button type="submit" class="submit-btn">ลงทะเบียน</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
