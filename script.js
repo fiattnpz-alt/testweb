@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         data.lineUserId = lineUserId;
 
         // REPLACEME: User needs to replace this URL after deploying their script
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzvB7bhm-4VQUIO8OqZlh4_bTmkTyEXTHhkUAt4G1egexh1nMoPLe4EvuZgnfi3tQ/exec';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzRpVrCr4IdfCZtIFhyezHnXL9rIQt8ImqKBnMMAuRttJMQ0idLIAZk-rJaAUYyeAQ/exec';
 
         fetch(GOOGLE_SCRIPT_URL, {
             method: 'POST',
