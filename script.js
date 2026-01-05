@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
 
     // --- LIFF INITIALIZATION ---
-    const LIFF_ID = 'REPLACE_WITH_YOUR_LIFF_ID'; // TODO: User must replace this
+    const LIFF_ID = '2008820349-2nsOUfZi'; // TODO: User must replace this
     let lineUserId = '';
 
     try {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         data.lineUserId = lineUserId;
 
         // REPLACEME: User needs to replace this URL after deploying their script
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwoUPi4TxFF0AechgSCy2idtith_rjNAWI7HDOzZHgCZmWFBHl2Up_3hlk90Fms6Nk/exec';
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzXjt-S2K6j823yP-cFVKV6NBpfTMyq0z9MIqaB000OTGaPui_FCS94YMxIMgxzi-Q/exec';
 
         fetch(GOOGLE_SCRIPT_URL, {
             method: 'POST',
