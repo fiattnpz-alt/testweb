@@ -123,7 +123,55 @@ body {
 input[type="date"] {
     -webkit-appearance: none;
     appearance: none;
-    min-height: 45px; /* Ensure height matches text inputs */
+    min-height: 45px;
+    /* Ensure height matches text inputs */
+}
+
+/* Loading Overlay */
+#liffLoading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+#liffLoading.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e5e7eb;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+}
+
+.loading-text {
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Mobile Responsiveness */
@@ -131,11 +179,11 @@ input[type="date"] {
     .glass-card {
         padding: 24px;
     }
-    
+
     .header h1 {
         font-size: 24px;
     }
-    
+
     .form-group-row {
         flex-direction: column;
         gap: 0;
